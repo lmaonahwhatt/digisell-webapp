@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DigiSell Магазин</title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>🛒 DigiSell</h1>
+        <div class="balance">💰 Баланс: <span id="balance">0 ₽</span></div>
+      </div>
+
+      <!-- STEAM -->
+      <div class="category" data-name="Steam KZ" data-price="299">
+        <div class="category-icon">🎮</div>
+        <h3>Steam Казахстан</h3>
+        <div class="category-price">299 ₽</div>
+      </div>
+
+      <div class="category" data-name="Steam TUR" data-price="299">
+        <div class="category-icon">🌍</div>
+        <h3>Steam Турция</h3>
+        <div class="category-price">299 ₽</div>
+      </div>
+
+      <!-- YOUTUBE PREMIUM -->
+      <div class="category" data-name="YouTube 1мес" data-price="349">
+        <div class="category-icon">📺</div>
+        <h3>YouTube Premium 1мес</h3>
+        <div class="category-price">349 ₽</div>
+      </div>
+
+      <div class="category" data-name="YouTube 12мес" data-price="2399">
+        <div class="category-icon">📺</div>
+        <h3>YouTube Premium 12мес</h3>
+        <div class="category-price">2399 ₽</div>
+      </div>
+
+      <!-- WINDOWS/OFFICE -->
+      <div class="category" data-name="Windows 11 Pro" data-price="249">
+        <div class="category-icon">💻</div>
+        <h3>Windows 11 Pro</h3>
+        <div class="category-price">249 ₽</div>
+      </div>
+
+      <div class="category" data-name="Office 2024" data-price="249">
+        <div class="category-icon">📝</div>
+        <h3>Office 2024 Pro</h3>
+        <div class="category-price">249 ₽</div>
+      </div>
+
+      <!-- TELEGRAM STARS -->
+      <div class="category" data-name="TG Stars 100" data-price="169">
+        <div class="category-icon">⭐</div>
+        <h3>Telegram Stars 100</h3>
+        <div class="category-price">169 ₽</div>
+      </div>
+    </div>
+
+    <div class="cart" id="cartBtn">
+      🛍️ Корзина: <span id="cartCount">0</span> товаров •
+      <span id="cartTotal">0 ₽</span>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
