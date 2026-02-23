@@ -1,3 +1,7 @@
+/* 🔥 TEST UPDATE v2 */
+body { background: red !important; }  /* ВРЕМЕННО красный фон */
+
+
 :root {
   --primary: #1A1A2E;
   --accent-start: #16213E;
@@ -151,3 +155,4 @@ body {
 .cart:hover.cart-empty {
   box-shadow: 0 25px 80px rgba(255,107,107,0.5);
 }
+
