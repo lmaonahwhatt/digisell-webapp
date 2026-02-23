@@ -21,7 +21,7 @@ body {
 }
 
 .logo {
-  width: 200px;
+  width: 150px;
   height: auto;
   display: block;
   margin: 0 auto;
@@ -37,6 +37,7 @@ body {
     transform: translateY(0);
   }
 }
+
 
 
 
