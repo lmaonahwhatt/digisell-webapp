@@ -31,12 +31,31 @@ body {
   filter: drop-shadow(0 4px 12px rgba(255,255,255,0.3));
 }
 
+.slogan {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 300;
+  color: #888888;
+  letter-spacing: 2px;
+  opacity: 0;
+  animation: fadeInUp 1s ease-out 0.5s forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
 @keyframes slideDown {
   to {
     opacity: 1;
     transform: translateY(0);
   }
 }
+
 
 
 
