@@ -34,7 +34,7 @@ body {
 .slogan {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 20px;
-  font-weight: 300;
+  font-weight: 400;
   color: #fff;
   opacity: 0;
   animation: fadeInUp 1s ease-out 0.5s forwards;
@@ -54,6 +54,7 @@ body {
     transform: translateY(0);
   }
 }
+
 
 
 
