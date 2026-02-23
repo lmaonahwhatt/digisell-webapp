@@ -166,7 +166,7 @@ body {
 
 .contacts-text {
   margin-top: 15px;
-  
+  margin-bottom: 15px;
 }
 
 .contacts-buttons {
@@ -234,6 +234,7 @@ body {
 @keyframes slideUp {
   to { opacity: 1; transform: translateY(0); }
 }
+
 
 
 
