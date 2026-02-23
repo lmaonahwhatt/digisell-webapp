@@ -165,9 +165,16 @@ body {
 }
 
 .contacts-text {
+  font-size: 15px;
+  color: #aaa;
   margin-top: 15px;
   margin-bottom: 15px;
+  font-weight: 400;
+  opacity: 0;
+  transform: translateY(15px);
+  transition: all 0.5s ease-out;
 }
+
 
 .contacts-buttons {
   display: flex;
@@ -234,6 +241,7 @@ body {
 @keyframes slideUp {
   to { opacity: 1; transform: translateY(0); }
 }
+
 
 
 
