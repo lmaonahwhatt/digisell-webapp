@@ -60,7 +60,7 @@ body {
 }
 
 .buttons {
-  margin-top: 50px;
+  margin: 0px 10px 0px 10px;
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -103,6 +103,7 @@ body {
     transform: translateY(0);
   }
 }
+
 
 
 
