@@ -25,13 +25,14 @@ body {
   height: auto;
   display: block;
   margin: 0 auto;
-  opacity: 0;           /* СКРЫТО изначально */
-  transform: translateY(-50px);  /* СВЕРХУ */
-  animation: slideDown 1s ease-out forwards;  /* АНИМАЦИЯ */
+  opacity: 0;          
+  transform: translateY(-50px);  
+  animation: slideDown 1s ease-out forwards;  
   filter: drop-shadow(0 4px 12px rgba(255,255,255,0.3));
 }
 
 .slogan {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 20px;
   font-weight: 300;
   color: #fff;
@@ -54,6 +55,7 @@ body {
     transform: translateY(0);
   }
 }
+
 
 
 
