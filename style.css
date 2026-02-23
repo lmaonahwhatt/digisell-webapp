@@ -16,8 +16,9 @@ body {
 }
 
 .header {
+  padding: 0;
+  padding-top: 20px;  /* ❌ УБРАНО свободное место сверху */
   text-align: center;
-  padding: 40px 20px;
   background: #000000;
 }
 
@@ -26,7 +27,19 @@ body {
   height: auto;
   display: block;
   margin: 0 auto;
+  opacity: 0;           /* СКРЫТО изначально */
+  transform: translateY(-50px);  /* СВЕРХУ */
+  animation: slideDown 0.8s ease-out forwards;  /* АНИМАЦИЯ */
   filter: drop-shadow(0 4px 12px rgba(255,255,255,0.3));
 }
+
+@keyframes slideDown {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
 
 
