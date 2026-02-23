@@ -16,9 +16,17 @@ body {
 }
 
 .header {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  text-align: center;
+  padding: 40px 20px;
   background: #000000;
 }
+
+.logo {
+  width: 200px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  filter: drop-shadow(0 4px 12px rgba(255,255,255,0.3));
+}
+
+
