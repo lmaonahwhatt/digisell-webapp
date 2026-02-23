@@ -17,7 +17,8 @@ body {
 .container {
   max-width: 500px;
   margin: 0 auto;
-  padding: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .header {
@@ -115,6 +116,7 @@ body {
 @keyframes slideUp {
   to { opacity: 1; transform: translateY(0); }
 }
+
 
 
 
