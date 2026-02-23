@@ -111,9 +111,9 @@ body {
 .btn-2 {
   background: 
     linear-gradient(145deg, 
-      rgba(34,197,94,0.95) 0%,    
-      rgba(74,222,128,0.9) 50%,   
-      rgba(34,197,94,0.95) 100%),
+      rgba(22,101,52,0.95) 0%,  
+      rgba(46,125,50,0.9) 50%,
+      rgba(22,101,52,0.95) 100%),
     #0f1419;
 }
 
@@ -145,6 +145,7 @@ body {
 @keyframes slideUp {
   to { opacity: 1; transform: translateY(0); }
 }
+
 
 
 
