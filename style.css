@@ -1,11 +1,7 @@
-
 :root {
-  --primary: #1A1A2E;
-  --accent-start: #16213E;
-  --accent-end: #0F3460;
+  --primary: #000000;
   --success: #00D4AA;
   --text: #FFFFFF;
-  --bg-dark: #0F0F23;
   --gold: #FFD700;
 }
 
@@ -17,7 +13,7 @@
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  background: linear-gradient(135deg, var(--accent-start), var(--accent-end));
+  background: #000000;
   color: var(--text);
   min-height: 100vh;
   padding: 20px;
@@ -31,17 +27,16 @@ body {
 .header {
   text-align: center;
   margin-bottom: 30px;
-  padding: 20px 0;
-  background: rgba(255,255,255,0.05);
+  padding: 30px 20px;
+  background: #111111;
   border-radius: 20px;
-  backdrop-filter: blur(15px);
-  border: 1px solid rgba(255,255,255,0.1);
+  border: 2px solid #222222;
 }
 
 .header h1 {
   font-size: 32px;
   font-weight: 800;
-  margin-bottom: 12px;
+  margin-bottom: 15px;
   background: linear-gradient(45deg, var(--success), var(--gold));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -49,48 +44,29 @@ body {
 }
 
 .balance {
-  background: rgba(255,255,255,0.1);
+  background: #222222;
   padding: 15px 25px;
   border-radius: 16px;
-  backdrop-filter: blur(20px);
-  border: 1px solid rgba(255,255,255,0.15);
+  border: 1px solid #333333;
   font-size: 18px;
   font-weight: 600;
 }
 
 .category {
-  background: rgba(255,255,255,0.08);
-  backdrop-filter: blur(20px);
+  background: #1a1a1a;
   border-radius: 20px;
   padding: 28px;
   margin-bottom: 20px;
   cursor: pointer;
-  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  border: 1px solid rgba(255,255,255,0.1);
-  position: relative;
-  overflow: hidden;
-}
-
-.category::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
-  transition: left 0.5s;
-}
-
-.category:hover::before {
-  left: 100%;
+  transition: all 0.3s ease;
+  border: 2px solid #2a2a2a;
 }
 
 .category:hover {
-  transform: translateY(-8px) scale(1.02);
-  background: rgba(255,255,255,0.15);
+  transform: translateY(-5px);
+  background: #222222;
   border-color: var(--success);
-  box-shadow: 0 20px 60px rgba(0,212,170,0.3);
+  box-shadow: 0 15px 40px rgba(0,212,170,0.2);
 }
 
 .category-icon {
@@ -98,7 +74,6 @@ body {
   display: block;
   margin-bottom: 20px;
   text-align: center;
-  filter: drop-shadow(0 4px 8px rgba(0,0,0,0.3));
 }
 
 .category h3 {
@@ -106,7 +81,6 @@ body {
   font-weight: 700;
   margin-bottom: 12px;
   text-align: center;
-  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
 }
 
 .category-price {
@@ -117,7 +91,6 @@ body {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-align: center;
-  text-shadow: 0 4px 8px rgba(0,0,0,0.3);
 }
 
 .cart {
@@ -132,25 +105,18 @@ body {
   text-align: center;
   font-weight: 800;
   font-size: 20px;
-  box-shadow: 0 20px 60px rgba(0,212,170,0.5);
+  box-shadow: 0 20px 60px rgba(0,212,170,0.4);
   cursor: pointer;
-  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  border: 2px solid rgba(255,255,255,0.2);
-  backdrop-filter: blur(20px);
+  transition: all 0.3s ease;
+  border: 2px solid rgba(255,255,255,0.3);
 }
 
 .cart:hover {
-  transform: scale(1.05) translateY(-5px);
-  box-shadow: 0 25px 80px rgba(0,212,170,0.6);
+  transform: scale(1.05) translateY(-3px);
+  box-shadow: 0 25px 60px rgba(0,212,170,0.5);
 }
 
 .cart-empty {
   background: linear-gradient(45deg, #FF6B6B, #EE5A52);
   box-shadow: 0 20px 60px rgba(255,107,107,0.4);
 }
-
-.cart:hover.cart-empty {
-  box-shadow: 0 25px 80px rgba(255,107,107,0.5);
-}
-
-
