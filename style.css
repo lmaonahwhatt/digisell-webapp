@@ -30,7 +30,6 @@ body {
   width: 150px;
   height: auto;
   display: block;
-  margin: 0 auto 30px;
   opacity: 0;
   transform: translateY(-50px);
   animation: slideDown 1s ease-out forwards;
@@ -120,6 +119,7 @@ body {
 @keyframes slideUp {
   to { opacity: 1; transform: translateY(0); }
 }
+
 
 
 
