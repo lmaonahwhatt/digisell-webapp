@@ -5,7 +5,7 @@
 }
 
 body {
-  background: #1d1f2;
+  background: #0a0a15;
   min-height: 100vh;
 }
 
@@ -18,7 +18,7 @@ body {
 .header {
   padding: 0;
   text-align: center;
-  background: #1d1f2;
+  background: #0a0a15;
 }
 
 .logo {
@@ -38,6 +38,7 @@ body {
     transform: translateY(0);
   }
 }
+
 
 
 
