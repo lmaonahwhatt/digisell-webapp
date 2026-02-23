@@ -27,7 +27,7 @@ body {
   margin: 0 auto;
   opacity: 0;           /* СКРЫТО изначально */
   transform: translateY(-50px);  /* СВЕРХУ */
-  animation: slideDown 0.8s ease-out forwards;  /* АНИМАЦИЯ */
+  animation: slideDown 1s ease-out forwards;  /* АНИМАЦИЯ */
   filter: drop-shadow(0 4px 12px rgba(255,255,255,0.3));
 }
 
@@ -37,6 +37,7 @@ body {
     transform: translateY(0);
   }
 }
+
 
 
 
