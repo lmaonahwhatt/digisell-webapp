@@ -21,7 +21,6 @@ body {
 }
 
 .header {
-  padding: 20px 0;
   text-align: center;
   background: #0a0a15;
 }
@@ -118,6 +117,7 @@ body {
 @keyframes slideUp {
   to { opacity: 1; transform: translateY(0); }
 }
+
 
 
 
