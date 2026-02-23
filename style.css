@@ -5,7 +5,7 @@
 }
 
 body {
-  background: #0c0413;
+  background: #00008b;
   min-height: 100vh;
 }
 
@@ -38,6 +38,7 @@ body {
     transform: translateY(0);
   }
 }
+
 
 
 
