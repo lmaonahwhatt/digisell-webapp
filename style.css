@@ -166,7 +166,7 @@ body {
 
 .contacts-text {
   font-size: 15px;
-  color: #aaa;
+  color: #fff;
   margin-top: 15px;
   margin-bottom: 15px;
   font-weight: 400;
@@ -241,6 +241,7 @@ body {
 @keyframes slideUp {
   to { opacity: 1; transform: translateY(0); }
 }
+
 
 
 
