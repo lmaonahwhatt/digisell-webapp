@@ -29,6 +29,7 @@ body {
 .logo {
   width: 150px;
   height: auto;
+  margin: 0 auto;  
   display: block;
   opacity: 0;
   transform: translateY(-50px);
