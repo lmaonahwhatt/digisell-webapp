@@ -25,6 +25,58 @@
     });
   }, 3200);
 </script>
+    <script>
+window.Telegram?.WebApp?.ready();
+
+
+const mainBtn = window.Telegram.WebApp.MainButton;
+mainBtn.text = '🏠 Категории';
+mainBtn.color = '#007AFF';
+mainBtn.textColor = 'white';
+mainBtn.show();
+
+
+function showCategories() {
+  document.querySelector('.header').style.display = 'block';
+  document.querySelector('.contacts').style.display = 'block';
+  document.querySelector('.category-page')?.remove();
+  mainBtn.hide();
+}
+
+function showCategory(category) {
+  document.querySelector('.header').style.display = 'none';
+  document.querySelector('.contacts').style.display = 'none';
+  
+ 
+  const categoryPage = document.createElement('div');
+  categoryPage.className = 'category-page';
+  categoryPage.innerHTML = `
+    <div class="category-header">
+      <button onclick="showCategories()" class="back-btn">← Назад</button>
+      <h2>${category}</h2>
+    </div>
+    <div class="products">Товары категории ${category}...</div>
+  `;
+  document.querySelector('.container').appendChild(categoryPage);
+  
+  
+  mainBtn.text = category;
+  mainBtn.onClick(() => {
+    document.querySelector('.category-page').remove();
+    showCategories();
+  });
+  mainBtn.show();
+}
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelector('.btn-1').onclick = () => showCategory('Steam');
+  document.querySelector('.btn-2').onclick = () => showCategory('Подписки');
+  document.querySelector('.btn-3').onclick = () => showCategory('Telegram');
+  document.querySelector('.btn-4').onclick = () => showCategory('Apple');
+});
+</script>
+
 
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -86,6 +138,7 @@
     </div>
   </body>
 </html>
+
 
 
 
