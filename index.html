@@ -25,137 +25,7 @@
     });
   }, 3200);
 </script>
-    <script>
-window.Telegram?.WebApp?.ready();
 
-const tg = window.Telegram.WebApp;
-const mainBtn = tg.MainButton;
-const backBtn = tg.BackButton;
-
-// ИНИЦИАЛИЗАЦИЯ КНОПОК
-mainBtn.text = '🏠 Категории';
-mainBtn.color = '#007AFF';
-mainBtn.textColor = 'white';
-backBtn.show();
-
-// АНИМАЦИИ (старые)
-setTimeout(() => {
-  document.querySelector('.contacts-text').style.opacity = '1';
-  document.querySelector('.contacts-text').style.transform = 'translateY(0)';
-}, 3000);
-
-setTimeout(() => {
-  document.querySelectorAll('.contact-btn').forEach((btn, index) => {
-    setTimeout(() => {
-      btn.style.opacity = '1';
-      btn.style.transform = 'translateY(0) scale(1)';
-    }, index * 200);
-  });
-}, 3200);
-
-// НАВИГАЦИЯ
-let currentPage = 'categories';
-
-function showCategories() {
-  document.querySelector('.header').style.display = 'block';
-  document.querySelector('.contacts').style.display = 'block';
-  document.querySelector('.category-page')?.remove();
-  document.querySelector('.favorites-page')?.remove();
-  document.querySelector('.cart-page')?.remove();
-  
-  mainBtn.text = '🏠 Категории';
-  tg.MainButton.hide();
-  tg.SecondaryButton.hide();
-  backBtn.hide();
-  currentPage = 'categories';
-}
-
-function showCategory(category) {
-  document.querySelector('.header').style.display = 'none';
-  document.querySelector('.contacts').style.display = 'none';
-  
-  const categoryPage = document.createElement('div');
-  categoryPage.className = 'category-page';
-  categoryPage.id = 'category-' + category;
-  categoryPage.innerHTML = `
-    <div class="category-header">
-      <button onclick="showCategories()" class="back-btn">← Назад</button>
-      <h2>${category}</h2>
-    </div>
-    <div class="products">
-      <p>🎮 Товары категории <strong>${category}</strong></p>
-    </div>
-  `;
-  document.querySelector('.container').appendChild(categoryPage);
-  
-  // ✅ MAIN + SECONDARY кнопки
-  mainBtn.text = category;
-  mainBtn.onClick(() => showCategories());
-  mainBtn.show();
-  
-  tg.SecondaryButton.text = '❤️ Избранное';
-  tg.SecondaryButton.position = 'left';
-  tg.SecondaryButton.color = '#FF3B30';
-  tg.SecondaryButton.textColor = 'white';
-  tg.SecondaryButton.onClick(() => showFavorites());
-  tg.SecondaryButton.show();
-  
-  backBtn.onClick(showCategories);
-  backBtn.show();
-  currentPage = category;
-}
-
-function showFavorites() {
-  const favoritesPage = document.createElement('div');
-  favoritesPage.className = 'favorites-page';
-  favoritesPage.innerHTML = `
-    <div class="category-header">
-      <button onclick="showCategories()" class="back-btn">← Категории</button>
-      <h2>❤️ Избранное</h2>
-    </div>
-    <div class="products">⭐ Ваши избранные товары</div>
-  `;
-  document.querySelector('.container').appendChild(favoritesPage);
-  
-  mainBtn.text = '🛒 Корзина';
-  mainBtn.onClick(() => showCart());
-  mainBtn.show();
-  
-  tg.SecondaryButton.text = '🏠 Категории';
-  tg.SecondaryButton.onClick(() => showCategories());
-  currentPage = 'favorites';
-}
-
-function showCart() {
-  const cartPage = document.createElement('div');
-  cartPage.className = 'cart-page';
-  cartPage.innerHTML = `
-    <div class="category-header">
-      <button onclick="showCategories()" class="back-btn">← Категории</button>
-      <h2>🛒 Корзина</h2>
-    </div>
-    <div class="products">💳 Оформление заказа</div>
-  `;
-  document.querySelector('.container').appendChild(cartPage);
-  
-  mainBtn.text = '✅ Оформить';
-  mainBtn.onClick(() => alert('Заказ оформлен!'));
-  mainBtn.color = '#34C759';
-  mainBtn.show();
-  
-  tg.SecondaryButton.text = '❤️ Избранное';
-  tg.SecondaryButton.onClick(() => showFavorites());
-  currentPage = 'cart';
-}
-
-// Обработчики категорий
-document.addEventListener('DOMContentLoaded', () => {
-  document.querySelector('.btn-1').onclick = () => showCategory('Steam');
-  document.querySelector('.btn-2').onclick = () => showCategory('Подписки');
-  document.querySelector('.btn-3').onclick = () => showCategory('Telegram');
-  document.querySelector('.btn-4').onclick = () => showCategory('Apple');
-});
-</script>
 
 
 
@@ -219,6 +89,7 @@ document.addEventListener('DOMContentLoaded', () => {
     </div>
   </body>
 </html>
+
 
 
 
